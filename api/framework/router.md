@@ -87,6 +87,44 @@ If set to true, the router callbacks will not be called.
     });
     </script>
 
+### replace
+
+Navigates to the given route, replacing the current view in the history stack (like history.replaceState or location.replace work).
+
+#### Parameters
+
+##### route `String`
+
+The route to navigate to.
+
+##### silent `Boolean` **(default: false)**
+
+If set to true, the router callbacks will not be called.
+
+#### Example
+    <a id="link1" href="#bar">Click me first</a>
+    <a id="link2" href="#">Click me second</a>
+    <a id="link3" href="#">Click me third</a>
+
+    <script>
+    var router = new kendo.Router();
+
+    $(function() {
+      router.start();
+
+      $("#link2").click(function() {
+        router.replace("baz");
+        return false;
+      });
+
+      $("#link3").click(function() {
+        history.back();
+        alert(location.href); // we will be back to the initial url at this point
+        return false;
+      });
+    });
+    </script>
+
 ### destroy
 
 Unbinds the router instance listeners from the URL fragment part changes.

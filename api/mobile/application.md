@@ -279,6 +279,44 @@ Optional. The transition to apply when navigating. See [View Transitions section
         }
     </script>
 
+### replace
+
+Navigate to local or to remote view. The view will replace the current one in the history stack.
+
+#### Parameters
+
+##### url `String`
+
+The id or url of the view.
+
+##### transition `String`
+
+Optional. The transition to apply when navigating. See [View Transitions section](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+
+###### Example
+
+    <div data-role="view" id="foo">
+        Foo
+        <a href="#bar" data-role="button">Bar</a>
+    </div>
+
+    <div data-role="view" id="bar">
+        <a data-role="button" data-click="replaceBar">Baz</a>
+    </div>
+
+    <div data-role="view" id="baz">
+        <a data-role="backbutton">Back (will show Foo view)</a>
+        Baz
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        function replaceBar() {
+            kendo.mobile.application.replace("#baz");
+        }
+
+        new kendo.mobile.Application(document.body);
+    </script>
+
 ### scroller
 
 Get a reference to the current view's scroller widget instance.

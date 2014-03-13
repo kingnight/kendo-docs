@@ -195,6 +195,49 @@ The id or URL of the view.
 
 The transition to apply when navigating. See [View Transitions](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
 
+### replace
+
+Navigate to local or to remote view. The view will replace the current one in the history stack.
+
+#### Parameters
+
+##### url `String`
+
+The id or URL of the view.
+
+##### transition `String`
+
+The transition to apply when navigating. See [View Transitions](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+
+### Example
+
+    <div data-role="splitview">
+        <div data-role="pane" id="main-pane">
+            <div data-role="view" id="foo">
+                Foo
+                <a href="#bar" data-role="button">Bar</a>
+            </div>
+
+            <div data-role="view" id="bar">
+                <a data-role="button" data-click="replaceBar">Baz</a>
+            </div>
+
+            <div data-role="view" id="baz">
+                <a data-role="backbutton">Back (will show Foo view)</a>
+                Baz
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        function replaceBar() {
+            var pane = $("#main-pane").data("kendoMobilePane");
+            pane.replace("#baz");
+        }
+
+        new kendo.mobile.Application(document.body);
+    </script>
+
 ### showLoading
 
 Show the loading animation.
