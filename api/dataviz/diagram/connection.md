@@ -60,23 +60,23 @@ Defines the highlight color when the pointer is hovering over the connection.
         });
     </script>
 
-### startCap `String` *(default: "FilledCircle")*
+### startCap `String` *(default: "circle")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowStart": a filled arrow
-* "FilledCircle": a filled circle
+* "arrow": a filled arrow
+* "circle": a filled circle
 
-### endCap `String` *(default: "ArrowEnd")*
+### endCap `String` *(default: "arrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowEnd": a filled arrow
-* "FilledCircle": a filled circle
+* "arrowEnd": a filled arrow
+* "circle": a filled circle
 
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
+Note that you can also use the "arrow" for the endCap but its direction will be inversed.
 
 ### points `Array`
 

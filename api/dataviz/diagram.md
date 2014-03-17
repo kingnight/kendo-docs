@@ -271,23 +271,23 @@ Defines the hover stroke configuration.
 
 Defines the highlight color when the pointer is hovering over the connection.
 
-### connectionDefaults.startCap `String` *(default: "FilledCircle")*
+### connectionDefaults.startCap `String` *(default: "circle")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowStart": a filled arrow
-* "FilledCircle": a filled circle
+* "arrow": a filled arrow
+* "circle": a filled circle
 
-### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
+### connectionDefaults.endCap `String` *(default: "arrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowEnd": a filled arrow
-* "FilledCircle": a filled circle
+* "arrowEnd": a filled arrow
+* "circle": a filled circle
 
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
+Note that you can also use the "arrow" for the endCap but its direction will be inversed.
 
 ### connections `Array`
 
@@ -317,23 +317,23 @@ Defines the hover stroke configuration.
 
 Defines the highlight color when the pointer is hovering over the connection.
 
-### connections.startCap `String` *(default: "FilledCircle")*
+### connections.startCap `String` *(default: "circle")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowStart": a filled arrow
-* "FilledCircle": a filled circle
+* "arrow": arrow
+* "circle": circle
 
-### connections.endCap `String` *(default: "ArrowEnd")*
+### connections.endCap `String` *(default: "arrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
 
 * "none": no cap
-* "ArrowEnd": a filled arrow
-* "FilledCircle": a filled circle
+* "arrowEnd": incoming arrow
+* "circle": circle
 
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
+Note that you can also use the "arrow" for the endCap but its direction will be inversed.
 
 ### connections.points `Array`
 
