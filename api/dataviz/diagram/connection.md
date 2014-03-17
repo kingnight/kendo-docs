@@ -60,7 +60,7 @@ Defines the highlight color when the pointer is hovering over the connection.
         });
     </script>
 
-### startCap `String` *(default: "circle")*
+### startCap `String` *(default: "none")*
 
 The start cap (arrow, head or decoration) of the connection:
 
@@ -68,7 +68,7 @@ The start cap (arrow, head or decoration) of the connection:
 * "arrow": a filled arrow
 * "circle": a filled circle
 
-### endCap `String` *(default: "arrowEnd")*
+### endCap `String` *(default: "none")*
 
 The start cap (arrow, head or decoration) of the connection:
 

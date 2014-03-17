@@ -18,7 +18,7 @@ Defines the connections configuration.
 
 ### endCap `java.lang.String`
 
-The start cap (arrow, head or decoration) of the connection:Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
+The start cap (arrow, head or decoration) of the connection:Note that you can also use the "arrow" for the endCap but its direction will be inversed.
 
 #### Example
     <kendo:diagram-connectionDefaults endCap="endCap">

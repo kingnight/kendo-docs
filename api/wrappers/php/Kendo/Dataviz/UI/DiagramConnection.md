@@ -13,7 +13,7 @@ A PHP class representing the connection setting of DiagramConnections.
 ## Methods
 
 ### endCap
-The start cap (arrow, head or decoration) of the connection:Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
+The start cap (arrow, head or decoration) of the connection:Note that you can also use the "arrow" for the endCap but its direction will be inversed.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramConnection`
