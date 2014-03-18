@@ -154,6 +154,46 @@ The **disabled** option specifies which items inside the Sortable's element cann
         });
     </script>
 
+## Cursor
+
+Sortable widget provides `cursor` configuration options that is used to specify the cursor that will be shown while user drags sortable item. There are a variety of cursor types you can choose from that are built into the browser or operating system of the user's computer (you can see a list of them on [quirksmode.org](http://quirksmode.org/css/user-interface/cursor.html). Here's an example of how to change the cursor:
+
+    <ul id="sortable">
+        <li>ItemA1</li>
+        <li>ItemA2</li>
+        <li>ItemA3</li>
+    </ul>
+
+    <script>
+        $("#sortable").kendoSortable({
+            cursor: "move"
+        });
+    </script>
+
+> Cursor option changes the cursor style only during item dragging. If the developer wants to change the on hover cursor he/she should use CSS.
+
+If a cursor that is not supported by default, or not supported across all browsers, you have the option to include a custom cursor image.
+
+### Example - grab/grabbing cursor
+
+    <ul id="sortable">
+        <li>ItemA1</li>
+        <li>ItemA2</li>
+        <li>ItemA3</li>
+    </ul>
+
+    <script>
+        $("#sortable").kendoSortable({
+            cursor: "url('http://demos.telerik.com/kendo-ui//content/web/sortable/grabbing.cur'), default"
+        });
+    </script>
+
+    <style>
+        #sortable li {
+            cursor: url('http://demos.telerik.com/kendo-ui//content/web/sortable/grabbing.cur'), default;
+        }
+    </style>
+
 ## Movement by axis
 
 By default the widget uses mouse cursor to determine the drop target before/after which sorted item should be placed. This means that if the mouse cursor is not over the target sortable element the placeholder will not be re-positioned.
