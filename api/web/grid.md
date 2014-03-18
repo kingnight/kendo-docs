@@ -6163,9 +6163,9 @@ The event handler function context (available via the `this` keyword) will be se
 
 The data item to which the table row is bound.
 
-##### e.row `jQuery`
+##### e.container `jQuery`
 
-The jQuery object representing the current table row.
+The jQuery object representing the current editor container element. If the [editable.mode](#configuration-editable.mode) is "incell", the container element will be the edited cell. If the mode is "inline", the container will be the edited row. If it is "popup" then the container element will the window element.
 
 ##### e.sender `kendo.ui.Grid`
 
