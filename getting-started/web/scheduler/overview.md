@@ -354,3 +354,28 @@ The above will work in Internet Explorer and Google Chrome. Firefox will ignore 
     }
 
 `17px` is a hard-coded value, which should match the scrollbar width. It can be calculated and set with Javascript before printing, if desired.
+
+In addition, the Scheduler needs a fixed pixel width for itself or some of its ancestors, otherwise it may resize during printing, which will cause the displayed absolutely positioned events to become misaligned.
+If the widget is part of a fluid layout, a fixed width can be set only for the printing task, and then removed:
+
+    <button id="printPage" type="button">Print</button>
+
+    <div id="scheduler"></div>
+
+    <script>
+
+        $("#printPage").click(function(e){
+            var schedulerElement = $("#scheduler")
+            schedulerElement.width(900);
+            // readjust events' positions
+            schedulerElement.data("kendoScheduler").resize();
+            window.print();
+            schedulerElement.width("");
+            schedulerElement.data("kendoScheduler").resize();
+        });
+
+        $("#scheduler").kendoScheduler({
+            // ...
+        });
+
+    </script>
