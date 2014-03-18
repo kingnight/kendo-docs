@@ -141,7 +141,7 @@ Here is how to configure the Kendo ComboBox to send parameters to the server:
          <script>
             function onAdditionalData() {
                 return {
-                    text: $("#productComboBox").val()
+                    text: $("#productComboBox").data("kendoComboBox").text()
                 };
             }
         </script>
@@ -167,7 +167,7 @@ Here is how to configure the Kendo ComboBox to send parameters to the server:
         <script>
             function onAdditionalData() {
                 return {
-                    text: $("#productComboBox").val()
+                    text: $("#productComboBox").data("kendoComboBox").text()
                 };
             }
         </script>
