@@ -370,6 +370,7 @@ If the widget is part of a fluid layout, a fixed width can be set only for the p
             // readjust events' positions
             schedulerElement.data("kendoScheduler").resize();
             window.print();
+            // restore previous Scheduler layout
             schedulerElement.width("");
             schedulerElement.data("kendoScheduler").resize();
         });
