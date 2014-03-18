@@ -21,8 +21,6 @@ Widget also has predefined rules specifying:
 
 For a complete overview of the MaskedTextBox's methods and configuration options, [review the MaskedTextBox API Reference](/kendo-ui/api/web/maskedtextbox).
 
-> MaskedTextBox is available in [Q1 2014 Beta](http://demos.telerik.com/kendo-ui/Beta/web/maskedtextbox/index.html)
-
 ## Getting Started
 
 ### Creating a MaskedTextBox from existing INPUT element
